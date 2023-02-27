@@ -1,0 +1,94 @@
+html{
+    background-color: lightslategray;
+    font-family:monospace;
+}
+#container{
+    margin:auto;
+    width:70%;
+    border-radius: 20px;
+    text-align: center;
+    background-color: lightgray;
+    height: 96vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    box-shadow: 0 0 4px 0px darkgrey;
+}
+table{
+    padding-top:5%;
+    margin:auto;
+    font-size: 50px;
+    width: 65%;
+    height: 65%;
+}
+h1{
+    font-size: 30px;
+}
+#ct, #cb{
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-right-style: solid;
+    border-right-width: 3px;
+}
+#lc, #rc{
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+#cc{
+    border-style:solid;
+    border-width:3px;
+}
+td{
+    width: 33%;
+    height: 33%;
+    cursor: pointer;
+}
+#winner{
+    margin:5px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#restart{
+    padding:5px 10px;
+    margin-top:5px;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    background-color: rgb(0, 191, 255);
+    visibility: hidden;
+    cursor: pointer;
+}
+#restart:hover{
+    background-color: rgb(0, 136, 255);
+}
+#leaderboard{
+    height:20%;
+}
+#teamX, #teamO{
+    margin:0 5%;
+    background-color:black;
+    color: white;
+    border-radius: 20px;
+    height: 100%;
+}
+#teamX{
+    width: 25%;
+    float:left;
+}
+#teamO{
+    width: 25%;
+    float:right;
+}
+#vs{
+    margin-top:5%;
+    width: 30%;
+    float: left;
+}
+#vs, #teamX, #teamO{
+    text-align: center;
+    font-size: 7vh;
+}
+#leaderboard > div > span{
+    font-size: 10vh;
+}
