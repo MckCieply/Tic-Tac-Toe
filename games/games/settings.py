@@ -59,7 +59,8 @@ ROOT_URLCONF = 'games.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'games/templates')],
+        'DIRS': [os.path.join(BASE_DIR,'games/templates'),
+                 os.path.join(BASE_DIR,'tictactoe/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
