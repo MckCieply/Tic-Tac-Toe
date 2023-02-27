@@ -49,7 +49,7 @@ td{
     font-size: xx-large;
     font-weight: bolder;
 }
-#restart{
+#restart, #next{
     padding:5px 10px;
     margin-top:5px;
     border: none;
@@ -59,7 +59,7 @@ td{
     visibility: hidden;
     cursor: pointer;
 }
-#restart:hover{
+#restart:hover, #next:hover{
     background-color: rgb(0, 136, 255);
 }
 #leaderboard{

@@ -17,7 +17,7 @@ for (var i = 0; i < cells.length; i++) {
 function check(td1, td2, td3, formation){
     if(winner == null){
         if(td1 == td2 && td2 == td3 && (td1 && td2 && td3)){
-            elements = document.getElementsByClassName(formation);
+            var elements = document.getElementsByClassName(formation);
             for(var element of elements)  
                 element.style.backgroundColor = "limegreen";
             return turn
@@ -63,9 +63,22 @@ function insert(){
     if (winner != null){
         document.getElementById("winner").innerHTML = (winner + " WON THE GAME");
         document.getElementById("restart").style.visibility = "visible";
+        document.getElementById("next").style.visibility = "visible";
     }
     if (turn == "X")
         turn = "O";
     else if (turn == "O" && winner == null)
         turn = "X";
+}
+function addpoint(){
+    if ( winner == "X"){
+        var wins = parseInt(document.getElementById("Xscore").innerText);
+        wins += 1;
+        document.getElementById("Xscore").innerText = wins;
+    }
+    else if (winner == "O"){
+        var wins = parseInt(document.getElementById("Xscore").innerText);
+        wins += 1;
+        document.getElementById("Xscore").innerText = wins;
+    }
 }
