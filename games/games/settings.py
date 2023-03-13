@@ -60,7 +60,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR,'games/templates'),
-                 os.path.join(BASE_DIR,'tictactoe/templates')],
+                 os.path.join(BASE_DIR,'tictactoe/templates'),
+                 os.path.join(BASE_DIR,'rpscissors/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

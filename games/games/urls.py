@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('tictactoe/', include('tictactoe.urls')),
+    path('RPScissors/', include('rpscissors.urls')),
 ]
